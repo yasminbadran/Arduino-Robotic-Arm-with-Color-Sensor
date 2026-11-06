@@ -1,22 +1,13 @@
 # Arduino Robotic Arm with Color Sensor
 
-I built this robotic arm for my Circuits and Electronics course at Zewail City. Four potentiometers let me control the arm and gripper by hand. A TCS34725 color sensor mounted next to the gripper reads the color of nearby objects.
+I built an Arduino-controlled robotic arm that I can move by hand using potentiometers. Turning the knobs lets me move the arm’s joints and open or close the gripper.
+
+A TCS34725 color sensor next to the gripper reads the color of an object placed in front of it. The Arduino shows the detected color in the Serial Monitor.
 
 ## Demo
 
-[Watch the robotic arm in action on MediaFire](https://www.mediafire.com/file/t8biwkywt60htjv/20261102_210041.mp4/file)
+[Watch the robotic arm in action](https://www.mediafire.com/file/t8biwkywt60htjv/20261102_210041.mp4/file)
 
-## Components
+## Project Report
 
-- Arduino Uno
-- 4 servo motors
-- 4 × 50 kΩ potentiometers
-- TCS34725 color sensor
-- External 5 V power supply for the servos
-
-## How it works
-
-Each potentiometer controls one servo. The Arduino maps the knob readings to target angles and moves the servos in small steps. The color sensor communicates with the Arduino over I²C. The Serial Monitor displays the four commanded angles and the color result.
-
-At startup, the program records the empty background as a reference. Keep objects away from the sensor during the first three seconds.
-
+See the project report for the wiring and Arduino pin assignments.
