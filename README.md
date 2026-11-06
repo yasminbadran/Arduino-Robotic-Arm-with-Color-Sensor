@@ -20,17 +20,3 @@ Each potentiometer controls one servo. The Arduino maps the knob readings to tar
 
 At startup, the program records the empty background as a reference. Keep objects away from the sensor during the first three seconds.
 
-## Wiring
-
-| Potentiometer input | Servo signal |
-| --- | --- |
-| A0 | D5 |
-| A1 | D4 |
-| A2 | D3 |
-| A3 | D2 |
-
-The color sensor connects to the Arduino through SDA (A4) and SCL (A5). Its VIN connects to 3.3 V and its GND connects to Arduino GND. The servos use a separate 5 V supply with a common ground shared with the Arduino.
-
-## Acknowledgments
-
-Thank you to Eng. Ahmed Abdel-Gawad Bilal and Dr. Mohamed Maher Ata.
